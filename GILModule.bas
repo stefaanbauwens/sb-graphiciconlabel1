@@ -285,6 +285,7 @@ RedrawTotalRows = UBound(RedrawControls.ControlCaptionRows) + 1
 RedrawTotalLimit = RedrawTotalRows
 
 If RedrawTotalLimit < RedrawControls.ControlCaptionLinesMinimum Then RedrawTotalLimit = RedrawControls.ControlCaptionLinesMinimum
+If RedrawTotalLimit > RedrawControls.ControlCaptionLinesMaximum Then RedrawTotalLimit = RedrawControls.ControlCaptionLinesMaximum
 If RedrawTotalRows > RedrawControls.ControlCaptionLinesMaximum Then RedrawTotalRows = RedrawControls.ControlCaptionLinesMaximum
 
 RedrawRowIndex = 0
